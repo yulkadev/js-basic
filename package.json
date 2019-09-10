@@ -1,0 +1,21 @@
+{
+  "name": "js-training",
+  "version": "1.0.0",
+  "description": "Training homeworks",
+  "main": "index.js",
+  "scripts": {
+    "test:lesson3": "jest homework/lesson3/data-types.js test",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ideli8@bitbucket.org/sgtrainingcamp/js-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/sgtrainingcamp/js-training#readme",
+  "dependencies": {
+    "eslint": "^5.0.1",
+    "jest": "^23.2.0"
+  }
+}

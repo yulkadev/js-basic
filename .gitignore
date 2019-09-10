@@ -1,0 +1,9 @@
+# IDE
+.vscode/
+.idea/
+*.orig
+
+# npm specific
+npm-debug*
+node_modules
+/npm-debug.log
