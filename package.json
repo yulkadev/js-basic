@@ -5,15 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test:lesson3": "jest homework/lesson3/data-types.js test",
-    "lint": "eslint"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ideli8@bitbucket.org/sgtrainingcamp/js-training.git"
+    "url": "https://github.com/imatveev/js-basic.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/sgtrainingcamp/js-training#readme",
+  "homepage": "https://github.com/imatveev/js-basic.git#readme",
   "dependencies": {
     "eslint": "^6.3.0",
     "jest": "^24.9.0"
