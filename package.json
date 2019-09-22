@@ -4,7 +4,6 @@
   "description": "Training homeworks",
   "main": "index.js",
   "scripts": {
-    "test:lesson3": "jest homework/lesson3/data-types.js test",
     "lint": "eslint ."
   },
   "repository": {
