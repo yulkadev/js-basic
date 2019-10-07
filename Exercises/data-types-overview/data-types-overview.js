@@ -19,9 +19,27 @@ console.log(typeof MySymbol);
 console.log(typeof MyObject);
 
 //3. Demonstrate object's references.
+
+var student = {
+    firstName: "John",
+    lastName: "Smith"   
+  };
+ console.log(student.firstName);
+
 //3. Demonstrate string's backticks features.
+
+let varForBactick = 1;
+console.log(`Demonstrating string in backtick and here is variable ${varForBactick}`)
 
 # Additional
 
 //1. Declare an array containing different data types.
+
+let myArray = [1, "test", true];
+console.log(myArray);
+
 //2. Iterate through it and collect amount of each data type to object.
+
+for (let element in myArray) {
+    console.log(typeof myArray[element]);
+}
