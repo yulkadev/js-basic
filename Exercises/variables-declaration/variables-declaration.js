@@ -1,17 +1,20 @@
 //1. Declare a variable which will be encapsulated from global scope.
 
 var encapsulatedFromGlobalScope = 10;
-alert(window.encapsulatedFromGlobalScope);
+if(true) {
+    console.log(encapsulatedFromGlobalScope);
+}
 
 //2. Declare a variable which will appear in global object.
 
 var myVariable = 20;
 {
-    var hoisted = 30;
     console.log(myVariable);
 }
 
 //3. Declare two variables which will be same-names but contain different values.
+
+// example1
 
 var sameNameVariable = 40;
 
@@ -22,15 +25,19 @@ function test () {
 
 test();
 
-//1. Declare a variable with hosting.
+// example2
 
-let hoistVariable = true;
+let firstName = "Jack";
 
-function hoist() {
-    if (1 == 2) {
-        let hoistVariable = false;
-    }
-    console.log(hoistVariable);
+if(true) {
+    let firstName = "Tom";
 }
 
-hoist();
+console.log(firstName);
+
+//1. Declare a variable with hosting.
+
+hoistVariable = true;
+console.log(hoistVariable);
+var hoistVariable;
+   
