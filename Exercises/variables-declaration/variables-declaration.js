@@ -1,6 +1,6 @@
 //1. Declare a variable which will be encapsulated from global scope.
 
-var encapsulatedFromGlobalScope = 10;
+encapsulatedFromGlobalScope = 10;
 if (true) {
   console.log(encapsulatedFromGlobalScope);
 }
