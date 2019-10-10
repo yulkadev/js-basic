@@ -46,10 +46,10 @@ console.log(typeof valueSymbol);
 //3. Demonstrate object's references.
 
 var student = {
-    firstName: 'John',
-    lastName: 'Smith'   
-  };
- console.log(student.firstName);
+  firstName: 'John',
+  lastName: 'Smith'   
+};
+console.log(student.firstName);
 
 //3. Demonstrate string's backticks features.
 
@@ -60,11 +60,21 @@ console.log(`Demonstrating string in backtick and here is variable ${varForBacti
 
 //1. Declare an array containing different data types.
 
-let myArray = [1, 'test', true];
-console.log(myArray);
+let myArray = [1, 'test', true, null, undefined];
 
 //2. Iterate through it and collect amount of each data type to object.
 
-for (let element in myArray) {
-    console.log(typeof myArray[element]);
+let collectObject = {};
+
+myArray.forEach(countObjectTypes);
+
+function countObjectTypes(arrayElement) {
+  if (collectObject[typeof arrayElement] == undefined) {
+    collectObject[typeof arrayElement] = 1;
+  }
+  else {
+    collectObject[typeof arrayElement] += 1;
+  }
 }
+
+console.log(collectObject);
