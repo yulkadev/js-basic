@@ -27,7 +27,7 @@ test();
 
 // example2
 
-let firstName = 'Jack';
+const firstName = 'Jack';
 
 if (true) {
   let firstName = 'Tom';
