@@ -7,8 +7,8 @@ let myString = 'My name is Yuliia';
 let myBoolean = true;
 let myNull = null;
 let myUndefined = undefined;
-let MySymbol = Symbol();
-let MyObject = {job:'QA'};
+let mySymbol = Symbol();
+let myObject = {job:'QA'};
 
 // 1.2 constructors
 
@@ -34,8 +34,14 @@ console.log(typeof myString);
 console.log(typeof myBoolean);
 console.log(typeof myNull);
 console.log(typeof myUndefined);
-console.log(typeof MySymbol);
-console.log(typeof MyObject);
+console.log(typeof mySymbol);
+console.log(typeof myObject);
+
+console.log(typeof valueNumber);
+console.log(typeof valueString);
+console.log(typeof valueObject);
+console.log(typeof valueBoolean);
+console.log(typeof valueSymbol);
 
 //3. Demonstrate object's references.
 
