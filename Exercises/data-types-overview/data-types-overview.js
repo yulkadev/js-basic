@@ -49,7 +49,12 @@ let student = {
   firstName: 'John',
   lastName: 'Smith'   
 };
-console.log(student.firstName);
+
+let student2 = student;
+student2.firstName = "Tommy";
+
+console.log(student);
+console.log(student2);
 
 //3. Demonstrate string's backticks features.
 
