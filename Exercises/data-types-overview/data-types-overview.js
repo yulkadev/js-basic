@@ -45,7 +45,7 @@ console.log(typeof valueSymbol);
 
 //3. Demonstrate object's references.
 
-var student = {
+let student = {
   firstName: 'John',
   lastName: 'Smith'   
 };
