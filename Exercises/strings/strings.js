@@ -6,7 +6,7 @@ console.log(varWithUnicode);
 
 //Declare a variable with string with escaped symbols.
 
-let varWithEscapedSymbols = 'It\'s not a problem.'
+let varWithEscapedSymbols = 'It\'s not a problem.';
 console.log(varWithEscapedSymbols);
 
 //Declare a variable which will contain name of your favourite animal.
@@ -22,7 +22,7 @@ console.log(`My favourite naimal name is ${myFavoriteAnimalName}`);
 const myFavouriteWriter = 'conan doyle';
 
 function capitalize(author) {  
-    return author.split(' ').map(el => el.charAt(0).toUpperCase() + el.substring(1)).join(' ');  
+  return author.split(' ').map(el => el.charAt(0).toUpperCase() + el.substring(1)).join(' ');  
 }  
 
 console.log(capitalize(myFavouriteWriter));
