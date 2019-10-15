@@ -35,3 +35,21 @@ console.log(capitalize(myFavouriteWriter));
 //should contain at leas one special character.
 //Make function which will generate password suggestion based on passed password, and required strongest.
 
+function passwordStrong(passwordString) {
+
+  if(!passwordString.match(/[A-Z]/)) {
+    console.log('Password should contain at least one capital letter');
+  }
+
+  if(passwordString.length === 0 || passwordString.length <= 8) { 
+    console.log('Password length should be no less than 8 characters');
+  }
+  if(!passwordString.match((/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))) {  
+    console.log('Password should contain at leas one special character');
+  }
+  else {
+    console.log('Your password is strong enough!');
+  }
+}
+
+passwordStrong('1#Gddddddddd');
