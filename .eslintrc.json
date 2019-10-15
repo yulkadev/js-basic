@@ -89,9 +89,8 @@
   },
   "env": {
     "node": true,
-    "mocha": true,
     "es6": true,
-    "phantomjs": true,
+    "commonjs": true,
     "browser": true
   },
   "extends": [
