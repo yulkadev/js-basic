@@ -43,11 +43,11 @@
       "always-multiline"
     ],
     "indent": [
-      1,
+      2,
       2
     ],
     "quotes": [
-      1,
+      2,
       "single"
     ],
     "linebreak-style": [
