@@ -56,7 +56,7 @@ averageNumber(myArray);
 
 function averageNumber2(myArray) {
   let total = myArray.reduce((total, amount) => total + amount);
-  console.log(Math.floor(total/myArray.length));
+  console.log((total/myArray.length).toFixed(2));  // "42.14"
 }
 
 averageNumber2(myArray);
