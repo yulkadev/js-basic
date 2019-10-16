@@ -12,7 +12,7 @@ console.log(hexademicalVar); // =10
 //2. Implement function `extractNumbers` which will leave only numbers in passed string.
 
 function extractNumbers (text) {
-  let numbersOnly = text.replace(/\D+/g, "");
+  let numbersOnly = text.replace(/\D+/g, '');
   console.log(numbersOnly);
 }
 
@@ -38,16 +38,16 @@ console.log(randomFromZeroToOneHundred);
 //# Additional
 
 //1. Make function which will take a array with numbers as a parameter and
-   //calculate average number and round to hundredths.
+//calculate average number and round to hundredths.
 
-var myArray = [0, 1, 2, 3, 4, 5, 444, 7, 8, 9, 10, 11];
+const myArray = [0, 1, 2, 3, 4, 5, 444, 7, 8, 9, 10, 11];
 
 function averageNumber(myArray) {
-    let total = 0;
-    for (let i = 0; i < myArray.length; i++) {
-        total += myArray[i];
-    }
-        console.log(Math.round(total/myArray.length));
+  let total = 0;
+  for (let i = 0; i < myArray.length; i++) {
+    total += myArray[i];
+  }
+  console.log(Math.fround(total/myArray.length).toFixed(2));
 }
 
 averageNumber(myArray);
