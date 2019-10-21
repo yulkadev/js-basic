@@ -22,10 +22,19 @@ console.log(`My favourite naimal name is ${myFavoriteAnimalName}`);
 const myFavouriteWriter = 'conan doyle';
 
 function capitalize(author) {  
-  return author.split(' ').map(el => el.charAt(0).toUpperCase() + el.substring(1)).join(' ');  
+  return author.split(' ').map(el => el[0].charAt(0).toUpperCase() + el.substring(1)).join(' ');  
 }  
 
 console.log(capitalize(myFavouriteWriter));
+
+// second implementation of capitalise words function without map()
+
+function capitalize2(str)
+{
+  console.log(str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}));
+}
+
+capitalize_Words(myFavouriteWriter);
 
 //Additional
 
@@ -36,12 +45,11 @@ console.log(capitalize(myFavouriteWriter));
 //Make function which will generate password suggestion based on passed password, and required strongest.
 
 function passwordStrong(passwordString) {
-
   if(!passwordString.match(/[A-Z]/)) {
     console.log('Password should contain at least one capital letter');
   }
 
-  if(passwordString.length === 0 || passwordString.length <= 8) { 
+  if(passwordString.length <= 8) { 
     console.log('Password length should be no less than 8 characters');
   }
   if(!passwordString.match((/.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/))) {  
