@@ -2,29 +2,29 @@
 
 // 1.1 plain creation
 
-let myNumber = 10;
-let myString = 'My name is Yuliia';
-let myBoolean = true;
-let myNull = null;
-let myUndefined = undefined;
-let mySymbol = Symbol();
-let myObject = {job:'QA'};
+const myNumber = 10;
+const myString = 'My name is Yuliia';
+const myBoolean = true;
+const myNull = null;
+const myUndefined;
+const mySymbol = Symbol();
+const myObject = { job:'QA' };
 
 // 1.2 constructors
 
-let valueNumber = new Number('23231'); 
+const valueNumber = new Number('23231');
 console.log(valueNumber);
 
-let valueString = new String('Some string'); 
+const valueString = new String('Some string');
 console.log(valueString);
 
-let valueObject = new Object({a: 1}); 
+const valueObject = new Object({ a: 1 });
 console.log(valueObject);
 
-let valueBoolean = new Boolean(true); 
+const valueBoolean = new Boolean(true);
 console.log(valueBoolean);
 
-let valueSymbol = Symbol('mySymbol'); 
+const valueSymbol = Symbol('mySymbol');
 console.log(valueSymbol);
 
 //2. Use operator typeof on each of them.
@@ -45,39 +45,38 @@ console.log(typeof valueSymbol);
 
 //3. Demonstrate object's references.
 
-let student = {
+const student = {
   firstName: 'John',
-  lastName: 'Smith'   
+  lastName: 'Smith'
 };
 
-let student2 = student;
-student2.firstName = "Tommy";
+const student2 = student;
+student2.firstName = 'Tommy';
 
 console.log(student);
 console.log(student2);
 
 //3. Demonstrate string's backticks features.
 
-let varForBactick = 1;
+const varForBactick = 1;
 console.log(`Demonstrating string in backtick and here is variable ${varForBactick}`);
 
 // Additional
 
 //1. Declare an array containing different data types.
 
-let myArray = [1, 'test', true, null, undefined];
+const myArray = [1, 'test', true, null, undefined];
 
 //2. Iterate through it and collect amount of each data type to object.
 
-let collectObject = {};
+const collectObject = {};
 
 myArray.forEach(countObjectTypes);
 
 function countObjectTypes(arrayElement) {
   if (collectObject[typeof arrayElement] == undefined) {
     collectObject[typeof arrayElement] = 1;
-  }
-  else {
+  } else {
     collectObject[typeof arrayElement] += 1;
   }
 }

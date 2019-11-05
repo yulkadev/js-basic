@@ -1,13 +1,13 @@
 //1. Declare a variable which will be encapsulated from global scope.
 
 if (true) {
-  let encapsulatedFromGlobalScope = 10;
+  const encapsulatedFromGlobalScope = 10;
   console.log(encapsulatedFromGlobalScope);
 }
 
 //2. Declare a variable which will appear in global object.
 
-var myVariable = 20;
+const myVariable = 20;
 {
   console.log(myVariable);
 }
@@ -16,10 +16,10 @@ var myVariable = 20;
 
 // example1
 
-var sameNameVariable = 40;
+const sameNameVariable = 40;
 
-function test () {
-  var sameNameVariable = 50;
+function test() {
+  const sameNameVariable = 50;
   console.log(sameNameVariable);
 }
 
@@ -30,7 +30,7 @@ test();
 const firstName = 'Jack';
 
 if (true) {
-  let firstName = 'Tom';
+  const firstName = 'Tom';
 }
 
 console.log(firstName);
@@ -39,5 +39,4 @@ console.log(firstName);
 
 hoistVariable = true;
 console.log(hoistVariable);
-var hoistVariable;
-   
+let hoistVariable;
