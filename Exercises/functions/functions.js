@@ -18,7 +18,11 @@ function takeMyParametersAmount(...newArr) {
 
 //2. Create a function and log all passed parameters to it. Check the `length` of this function.
 
-function logAllParameters(a, b, c) {
-
+function logAllParameters(...myParameters) {
+  return console.log(myParameters);
 }
 //3. Using anonymous function encapsulate function body from global scope.
+
+(function () {
+  console.log("Some text");
+})();
