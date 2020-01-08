@@ -1,8 +1,3 @@
-
-//3. Catch errors but only for failed executions.
-//4. Call `fakeAjax` do 3 request in serial.
-//5. Using your `delay` function from first task add delay between each serial request.
-
 //1. Make function which will return promise which will resolve in passed to function amount of milliseconds.
 
 async function resolveWithSetTimeout(ms) {
@@ -36,3 +31,22 @@ async function parallel() {
 }
 
 parallel();
+
+//3. Catch errors but only for failed executions.
+
+const firstPromise = util.promisify(fakeAjax);
+const secondPromise = util.promisify(fakeAjax);
+const thirdPromise = util.promisify(fakeAjax);
+
+async function catchErrorsForFailedOnly() {
+  await Promise.all([firstPromise(), secondPromise(), thirdPromise()]).then(response => {
+    console.log(response);
+  }).catch(error => {
+    console.log(error);
+  });
+}
+catchErrorsForFailedOnly();
+
+//4. Call `fakeAjax` do 3 request in serial.
+
+//5. Using your `delay` function from first task add delay between each serial request.
