@@ -5,7 +5,6 @@ let myObject = {};
 
 Object.defineProperty(myObject, 'myProperty', {
     value: 10,
-    name: 'Test name',
     writable: false,
     enumerable: false,
     configurable: false
@@ -39,6 +38,14 @@ let options = {
 
 let {title, width, height} = options;
 
+function myObjectDestruction({job = 'QA', experience = 1}){
+  console.log(job, experience);
+}
+yObjectDestruction({
+  job: 'Developer',
+  experience: 2
+});
+
 //4. Add key/value to object using dynamic key value.
 
 let obj = {
@@ -48,7 +55,7 @@ let obj = {
 
 obj.property1 = 'some value';
 obj.property2 = 'some other value';
-
+obj['property3'] = 'some other value3';
 
 let obj = {
   property1: 'value1',
